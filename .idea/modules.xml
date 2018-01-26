@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AssistMe - Volunteers.iml" filepath="$PROJECT_DIR$/AssistMe - Volunteers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_1\myapplication_1.iml" filepath="C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_1\myapplication_1.iml" />
+      <module fileurl="file://C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_2\myapplication_2.iml" filepath="C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_2\myapplication_2.iml" />
+      <module fileurl="file://C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_3\myapplication_3.iml" filepath="C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_3\myapplication_3.iml" />
+      <module fileurl="file://C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_4\myapplication_4.iml" filepath="C:\Users\user\AndroidStudioProjects\AssistMe-20171122T080033Z-001\AssistMe - Volunteers\myapplication_4\myapplication_4.iml" />
+    </modules>
+  </component>
+</project>
