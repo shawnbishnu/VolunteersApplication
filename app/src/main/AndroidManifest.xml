@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amc.akhil.myapplication">
+
+    <permission
+        android:name="com.amc.akhil.myapplication.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.amc.akhil.myapplication.permission.CALL_PHONE"
+        android:protectionLevel="signature" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" /> -->
+    <uses-permission android:name="com.amc.akhil.myapplication.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.amc.akhil.myapplication.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"/>
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC25eB5VYI4ys1lJj-khlc-z17WgVBjoO0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".AnimationActivity"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity android:name=".RequestAcknowledgementActivity" />
+        <activity android:name=".EmergencyActivity" />
+        <activity android:name=".DialerActivity"></activity>
+    </application>
+
+</manifest>

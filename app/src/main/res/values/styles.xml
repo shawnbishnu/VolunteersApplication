@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+        <item name="colorAccent">@color/material_deep_orange_700</item>
+        <!--<item name="colorAccent" tools:ignore="NewApi">#0092ff</item>
+        <item name="colorPrimary" tools:ignore="NewApi">#ffcc00</item>
+        <item name="colorPrimaryDark" tools:ignore="NewApi">#ff6600</item>-->
+        <!--<item name="android:actionBarSize">64dp</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BlackTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- item size in menu-->
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <!--<style name="ToolTipLayoutCustomStyle">
+        <item name="ttlm_padding">20dip</item>
+        <item name="ttlm_strokeColor">@color/timebase_color</item>
+        <item name="ttlm_backgroundColor">@color/yellow_color</item>
+        <item name="ttlm_strokeWeight">1dip</item>
+        <item name="ttlm_cornerRadius">10dip</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayCustomStyle</item>
+        <item name="android:textAppearance">@style/ToolTipTextStyle</item>
+    </style>-->
+
+    <style name="ToolTipTextStyle">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <!--<style name="ToolTipOverlayCustomStyle">
+        <item name="android:color">@color/timebase_color</item>
+        <item name="ttlm_repeatCount">1</item>
+        <item name="ttlm_duration">600</item>
+        <item name="android:alpha">0.2</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>-->
+
+</resources>

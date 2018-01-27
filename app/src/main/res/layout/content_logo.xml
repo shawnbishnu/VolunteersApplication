@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white_color"
+             tools:context="com.amc.akhil.myapplication.MainActivity"
+             tools:ignore="MergeRootFrame">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/assistme"
+        android:scaleType="fitCenter"/>
+
+
+    <TextView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="bottom|left"/>
+
+    <TextView
+        android:id="@+id/bandwidth"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+    />
+
+</FrameLayout>

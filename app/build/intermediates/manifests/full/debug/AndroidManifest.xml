@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amc.akhil.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="26" />
+
+    <permission
+        android:name="com.amc.akhil.myapplication.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.amc.akhil.myapplication.permission.CALL_PHONE"
+        android:protectionLevel="signature" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" /> -->
+    <uses-permission android:name="com.amc.akhil.myapplication.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.amc.akhil.myapplication.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+    <permission
+        android:name="com.amc.akhil.myapplication.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.amc.akhil.myapplication.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+ Required so the device vibrates on receiving a push notification.
+         Vibration settings of the device still apply.
+    -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--
+ Use to restore notifications the user hasn't interacted with.
+         They could be missed notifications if the user reboots their device if this isn't in place.
+    -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.amc.akhil.myapplication.MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name="com.amc.akhil.myapplication.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amc.akhil.myapplication.LoginActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC25eB5VYI4ys1lJj-khlc-z17WgVBjoO0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name="com.amc.akhil.myapplication.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.amc.akhil.myapplication.AnimationActivity"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.amc.akhil.myapplication.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity android:name="com.amc.akhil.myapplication.RequestAcknowledgementActivity" />
+        <activity android:name="com.amc.akhil.myapplication.EmergencyActivity" />
+        <activity android:name="com.amc.akhil.myapplication.DialerActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="onesignal_app_id"
+            android:value="40fdc78f-635d-4a59-9fd9-f8241852267e" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+        <meta-data
+            android:name="onesignal_google_project_number"
+            android:value="str:REMOTE" />
+
+        <receiver
+            android:name="com.onesignal.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+            <intent-filter android:priority="999" >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.amc.akhil.myapplication" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+
+        <service android:name="com.onesignal.GcmIntentService" /> <!-- For Android O -->
+        <service
+            android:name="com.onesignal.GcmIntentJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.SyncJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.RestoreJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.RestoreKickoffJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- END - For Android O -->
+        <service android:name="com.onesignal.SyncService" />
+
+        <activity
+            android:name="com.onesignal.PermissionsActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.onesignal.NotificationRestoreService" />
+
+        <receiver android:name="com.onesignal.BootUpReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.UpgradeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.amc.akhil.myapplication" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.amc.akhil.myapplication.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

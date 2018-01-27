@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "212619426795",
+    "firebase_url": "https://assistme-app.firebaseio.com",
+    "project_id": "assistme-app",
+    "storage_bucket": "assistme-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212619426795:android:1727fdc563fd9f9b",
+        "android_client_info": {
+          "package_name": "com.amc.akhil.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212619426795-65dnhaurtn5uiithvrjsoosspmtcnkk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amc.akhil.myapplication",
+            "certificate_hash": "47436d93b7da46e55ad96a191409af75f551f748"
+          }
+        },
+        {
+          "client_id": "212619426795-0pepq9sq7mfi2o40c1f1f3skldlmeg0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyzyYWoFyfkRwis8HmkfAY9uJnAO6HnL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212619426795-0pepq9sq7mfi2o40c1f1f3skldlmeg0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

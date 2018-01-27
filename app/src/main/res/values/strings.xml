@@ -1,0 +1,200 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_dial">Dial</string>
+    <string name="google_register">Google Account Sign In</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">Assist Me - Volunteers</string>
+
+    <string name="show_map_text">Map</string>
+    <string name="exit">Exit</string>
+
+    <string name="options_update">Update</string>
+    <string name="options_exit">Exit</string>
+    <string name="options_server">Server</string>
+    <string name="options_send_log">Send Log</string>
+
+    <string name="facebook_app_id" translatable="false">550947981660612</string>
+
+    <!--mapsforge rescue-->
+    <!--<string name="cancelbutton">Cancel</string>
+    <string name="preferences_scale">Display Scale</string>
+    <string name="preferences_scale_desc">Adjust scale of the map display</string>
+    <string name="dialog_location_title">Coordinates</string>
+    <string name="okbutton">OK</string>
+    <string name="zoomlevel">Zoom Level</string>-->
+
+    <!--REQUEST STATUS-->
+    <string name="NEW_REQUEST_NEW">New request</string>
+    <string name="NEW_REQUEST_PROCESSING">Processing..</string>
+    <string name="NEW_REQUEST_GREEN">Sending to car..</string>
+    <string name="NEW_REQUEST_YELLOW">Resending..</string>
+    <string name="NEW_REQUEST_RED">Searching for car..</string>
+    <string name="NEW_REQUEST_APPROVED">Approved !</string>
+    <string name="NEW_REQUEST_BEGIN">Begin</string>
+    <string name="NEW_REQUEST_DONE">Done</string>
+    <string name="NEW_REQUEST_NEXT">Approved</string>
+    <string name="NEW_REQUEST_PRIVATE">Private</string>
+    <string name="NEW_REQUEST_ON_POSITION">On position !</string>
+    <string name="NEW_REQUEST_SKIP_POSITION">Skiping position !</string>
+    <string name="NEW_REQUEST_TRANSFER">Approved !</string>
+    <string name="NEW_REQUEST_REFRESH">Processing..</string>
+    <string name="NEW_REQUEST_REJECTED">Rejected from car</string>
+    <string name="NEW_REQUEST_EDIT">Edit</string>
+    <string name="NEW_REQUEST_DELETE">Deleted</string>
+    <string name="NEW_REQUEST_SCHEDULED">Scheduled request</string>
+    <string name="ERROR_NO_FREE_CARS">No free cars</string>
+    <string name="ERROR_INVALID_REQUEST">Error invalid address</string>
+
+    <string name="new_version">New version available</string>
+
+    <string name="no_gps_title">No GPS</string>
+    <string name="no_gps_msg">Your GPS is disabled. Do you want to enable?</string>
+    <string name="show_address">Show address</string>
+    <string name="wait_address">Address is automatically set up from your coordinates. Please wait…</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="address">Address</string>
+    <string name="change">Change</string>
+    <string name="car_price">Price</string>
+    <string name="needs_from">I need more:</string>
+    <string name="request_taxi">Book Taxi</string>
+    <string name="new_user">Register</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="re_password">Repeat password:</string>
+    <string name="password_hint">Password hint:</string>
+    <string name="email">Email:</string>
+    <string name="firstname">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="family">Family:</string>
+    <string name="phone">GSM:</string>
+    <string name="agreement">User agreement</string>
+    <string name="accept_agreement">Accept agreement</string>
+    <string name="send">SEND</string>
+    <string name="private_request_question">Are you sure that you want to make private request to car number %1$s ?</string>
+    <string name="private_request">Private request to car number %1$s ?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="not_working">Sorry but car number %1$s not working. Do you want to call an other taxi?</string>
+    <string name="ok">OK</string>
+    <string name="required_field">Required field</string>
+    <string name="change_request">Change request</string>
+    <string name="changed_request">Changed request</string>
+    <string name="request_changed_successful">Request %1$s was changed successful! You can see the real time request status and change/delete after close this dialog or from menu REQUEST</string>
+    <string name="request_send_successful">Request %1$s was send successful! You can see the real time request status and change/delete after close this dialog or from menu REQUEST</string>
+    <string name="request_send_error">Request %1$s was not send! You can check your internet connection and try again</string>
+    <string name="address_choose">Address choose</string>
+    <string name="choose_from_map">Please click on the map and hold down for 1 second on the address</string>
+    <string name="check_internet">Check you internet connection</string>
+    <string name="user_not_exist">User with email:  %1$s not exist.</string>
+    <string name="exit_confirm">Are you sure that you want to exit from the system ?</string>
+    <string name="fb_login">Facebook Login</string>
+    <string name="new_account_question">Do you want to create user account in Taxi Bulgaria ?</string>
+    <string name="email_confirmation">Email confirmation</string>
+    <string name="new_account_confirmation">Your account is created successful but it`s need to confirm your email ( %1$s ). This can be done if you open the email and click on the link.</string>
+    <string name="email_exist">Email exist</string>
+    <string name="city_required">City is mandatory field.</string>
+    <string name="phone_required">Phone is mandatory field.</string>
+    <string name="email_not_valid">Email is not valid.</string>
+    <string name="agree_required">You must accept user agreement.</string>
+    <string name="username_exist">Username exist</string>
+    <string name="your_comment">You comment:</string>
+    <string name="later">Later</string>
+    <string name="taxi_request">Request taxi</string>
+    <string name="taxi_request_to_car">Request taxi to car number: %1$s</string>
+    <string name="no_free_cars">No free cars. Please try again later</string>
+    <string name="send_request">Sending request</string>
+    <string name="request_rejection">Request rejection</string>
+    <string name="request_reject_confirm">Are you sure that you want to reject request %1$s ?</string>
+    <string name="not_set">not set</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_request">How evaluate you ride from "%1$s"</string>
+    <string name="request_history">Request history</string>
+    <string name="active_requests">Active requests</string>
+    <string name="execution_time">Execution time</string>
+    <string name="car">Car</string>
+    <string name="filters">Filters</string>
+    <string name="status">Status</string>
+    <string name="no_requests">No requests.</string>
+    <string name="exception">exception</string>
+    <string name="fb_session_error">Facebook session error</string>
+    <string name="fb_no_access">Facebook no permission</string>
+    <string name="wrong_userpass">Wrong username or password!</string>
+    <string name="error_check_internet">Error! Check your internet connection.</string>
+    <string name="transfer_success">Request transfer ( %1$s ) is successful!</string>
+    <string name="driver">Driver:</string>
+    <string name="back">Back</string>
+    <string name="call">Call</string>
+    <string name="login_user">User/email:</string>
+    <string name="lost_password">Forgot Password?</string>
+    <string name="lost_pass_email">Enter the registration Email</string>
+    <string name="request_number">Request number</string>
+    <string name="datetime">Date and time</string>
+    <string name="car_arrive_time">Time to arrive car</string>
+    <string name="time_remaining">Remaining time</string>
+    <string name="reject">Reject</string>
+    <string name="download">Download</string>
+    <string name="history">History</string>
+    <string name="destination">Destination</string>
+    <string name="burgas">Burgas</string>
+    <string name="all_prices">all prices</string>
+    <string name="day_price">day price</string>
+    <string name="night_price">night price</string>
+    <string name="stay_price">stay price</string>
+    <string name="start_price">start price</string>
+    <string name="options_help">Help</string>
+    <string name="from_taxi">from taxi number: %1$s</string>
+    <string name="request_rejected">Sorry but request: %1$s ( %2$s ) is rejected.</string>
+    <string name="request_edited">Request:%1$s ( %2$s ) is edited.</string>
+    <string name="private_request_rejected">Sorry but Request:%1$s ( %2$s ) is rejected %3$s. Do you want to call another taxi for this request?</string>
+    <string name="request_aproved">Request:%1$s ( %2$s ) is approved %3$s</string>
+    <string name="request_invalid">Request:%1$s ( %2$s ) is invalid. Please change the address of you request.</string>
+    <string name="different_login">or</string>
+    <string name="user_preferences">User Preferences</string>
+    <string name="home">Home</string>
+    <string name="taxi_tooltip">Take a taxi with just one click</string>
+    <string name="default_preference">Default Prefferences</string>
+    <string name="resend">Resend</string>
+    <string name="driverRating">Driver Rating:</string>
+    <string name="carRating">Car Rating:</string>
+    <string name="no_active_request">No Active Requests</string>
+    <string name="contactText">Your opinion is very important to us. We appreciate your feedback and will use it to make improvements in our service.</string>
+    <string name="for_contacts">Feedback</string>
+    <string name="send_log_title">Send log files?</string>
+    <string name="canceled">canceled</string>
+    <string name="persons">How many people will travel?</string>
+    <string name="passengers">Passengers</string>
+
+    <string name="Delivery">DELIVERY</string>
+    <string name="combi">Combi (Large trunk)</string>
+    <string name="english_speaking">English speaking driver</string>
+    <string name="russian_speaking">Russian speaking driver</string>
+    <string name="women_riders">Women Riders</string>
+    <string name="wallet_payment">Wallet payment</string>
+    <string name="title_activity_gps_test">gps_test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="pause">Pause</string>
+    <string name="title_activity_register">Register</string>
+</resources>
